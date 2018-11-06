@@ -3,6 +3,26 @@
 # info contains (number, message, name, comment)
 info = [
     (1,),
+    (1, "", "sz6101238"),
+    (6.66,),
+    (2,),
+    (2.33,),
+    (1,),
+    (3, "成功了，感谢！"),
+    (3,),
+    (1, "感谢您的梯子～"),
+    (1, "感谢分享"),
+    (1, "加油继续做下去", "花郎"),
+    (20, None, 'llyy7'),
+    (5,),
+    (1, "Thank you"),
+    (10,),
+    (8.88,),
+    (5,),
+    (10, '感谢分享，'),
+    (3,),
+    (3.14, '买瓶可乐吧，兄弟'),
+    (1,),
     (1.11, 'saner'),
     (10, 'HOLD ON!'),
     (5.2, '谢谢分享'),
@@ -88,3 +108,8 @@ def parse(data):
 sum_people = len(info)
 sum_money = sum(list(zip(*info))[0])
 data = '\n'.join(map(parse, info))
+
+
+if __name__ == '__main__':
+    print("sum_people: ", sum_people)
+    print("sum_money: ", sum_money)
